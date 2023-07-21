@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              margin: 0;
+              font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .header {
+              text-align: center;
+              padding: 32px;
+            }
+            
+       
+            
+
+
+            .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+            
+           
+            </style>
+        <title>RGUVR</title>
+    </head>
+
+
+    <body>
+           <header> 
+        
+            <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGUVR</title>
+   
+    <link rel="stylesheet" href="main.css">
+            </header>
+
+          
+        <main> 
+            <nav> 
+                <nav> 
+                    <ul class="nav nav-pills">                    
+                    <link rel = "stylesheet" href="css/main.css"/> 
+                    <li class="btn">
+                        <a href = "Home page.html">Home</a>
+                    </li>
+                    <li class="btn">
+                        <a href = "Registation Page.html">Registration Page</a>
+                    </li>
+                    <li class="btn">
+                        <a href = "img_gallery.html">Image Gallery Page</a>
+                    </li>
+                    <li class="btn">
+                        <a href = "Launch calendar.html">Launch Calendar Page</a>
+                    </li>
+                    <li class="btn">
+                        <a href = "Social Media .html">Social Media Page </a>
+                    </li>
+                    </ul>
+            </nav>
+            
+        </nav>
+        
+       
+
+
+        <div class=”gallery”>
+            <figure class="gallery__item">
+              <img src="images/im 1.jpeg"/>
+            </figure>
+            <figure class="gallery__item gallery__item--2">
+              <img src="images/im 2.jpeg">
+            </figure>
+            <figure class="gallery__item gallery__item--3">
+              <img src="images/im 3.jpeg" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--4">
+              <img src="images/im 4.jpeg" class="gallery__img" >
+            </figure>
+            <figure class="gallery__item gallery__item--5">
+              <img src="images/im 5.jpeg" class="gallery__img">
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+              <img src="images/im 6.jpeg" class="gallery__img" >
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="images/im 7.jpeg" class="gallery__img" >
+              </figure>
+            <figure class="gallery__item gallery__item--6">
+            <img src="images/im 8.png" class="gallery__img" >
+            </figure>
+            <figure class="gallery__item gallery__item--6">
+                <img src="images/im 9.jpeg" class="gallery__img" >
+              </figure>
+          </div>
+        </main>
+
+        <script>
+            
+            var elements = document.getElementsByClassName("column");
+            
+          
+            var i;
+            
+            
+            function one() {
+                for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "100%";  
+                elements[i].style.flex = "100%";
+              }
+            }
+            
+            
+            function two() {
+              for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "50%"; 
+                elements[i].style.flex = "50%";
+              }
+            }
+            
+            
+            function four() {
+              for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "25%";  
+                elements[i].style.flex = "25%";
+              }
+            }
+            
+            
+            var header = document.getElementById("myHeader");
+            var btns = header.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
+        <aside> </aside>
+
+        <footer>  </footer>
+    </body>
+</html>
